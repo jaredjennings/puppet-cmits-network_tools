@@ -1,0 +1,12 @@
+{
+  "name": "jaredjennings/network_tools",
+  "version": "0.1.0",
+  "author": "Jared Jennings",
+  "summary": "Provide the functionality of the network_tools module from CMITS (boilerplate)",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jaredjennings/puppet-cmits-network_tools",
+  "project_page": "https://github.com/jaredjennings/puppet-cmits-network_tools",
+  "issues_url": "https://github.com/jaredjennings/puppet-cmits-network_tools/issues",
+  "dependencies": []
+}
+
