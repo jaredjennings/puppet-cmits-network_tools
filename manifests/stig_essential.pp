@@ -24,9 +24,9 @@ class network_tools::stig_essential {
 # Make the {\tt traceroute} utility executable only by root.
     $traceroute = $::osfamily ? {
 # We'll throw in \verb!traceroute6! for free.
-        'redhat' => [ '/bin/traceroute', '/bin/traceroute6' ],
-        'darwin' => '/usr/sbin/traceroute',
-        default  => unimplemented,
+        'RedHat' => [ '/bin/traceroute', '/bin/traceroute6' ],
+        'Darwin' => '/usr/sbin/traceroute',
+        default  => fail("unimplemented on ${::osfamily}"),
     }
     file { $traceroute:
         owner => root, group => 0, mode => 0700;
