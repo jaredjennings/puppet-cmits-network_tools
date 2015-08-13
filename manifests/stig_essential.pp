@@ -29,7 +29,7 @@ class network_tools::stig_essential {
         default  => fail("unimplemented on ${::osfamily}"),
     }
     file { $traceroute:
-        owner => root, group => 0, mode => 0700;
+        owner => root, group => 0, mode => '0700';
     }
 # \implements{macosxstig}{GEN004010 M6}%
 # \implements{unixsrg}{GEN004010}%
